@@ -85,7 +85,7 @@ The solution is using Azure API Management, Function App, and Logic Apps. These 
 
 2. Launch the template
 
-    [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https%3A%2F%2Fraw.githubusercontent.com%2Fchkp-jguo%2FCheck-Point-Logic-App-Connector%2Fmain%2FdeployCP.json)
+    [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchkp-jguo%2FCheck-Point-Logic-App-Connector%2Fmain%2FdeployCP.json)
 
 3. Template - Make sure you include the backslash of API extension /web_api/ 
 
@@ -226,4 +226,4 @@ The solution is using Azure API Management, Function App, and Logic Apps. These 
 
 # Deploy 
 
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https%3A%2F%2Fraw.githubusercontent.com%2Fchkp-jguo%2FCheck-Point-Logic-App-Connector%2Fmain%2FdeployCP.json)
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchkp-jguo%2FCheck-Point-Logic-App-Connector%2Fmain%2FdeployCP.json)
