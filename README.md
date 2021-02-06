@@ -2,7 +2,7 @@
 
 The Check Point Logic App Connector will allow you to automate security operations to all managed Check Point devices. The connector enables you to create Logic App workbooks that utilize Check Point Management API to automate most common security operations tasks. 
 
-Easily integrate with all native Azure services and hundreds of connectors such as ServiceNow, Jira, PagerDuty, ZenDesk, and more. See the [full list of available connectors here.](https://docs.microsoft.com/en-us/connectors/connector-reference/)
+Logic App can easily integrate Check Point with all native Azure services and hundreds of connectors such as ServiceNow, Jira, PagerDuty, ZenDesk, and more. See the [full list of available connectors here.](https://docs.microsoft.com/en-us/connectors/connector-reference/)
 
 Common use cases include: 
 
@@ -11,11 +11,11 @@ Common use cases include:
   3. Integrate with all leading SIEM/SOAR providers such as Azure Sentinel
 
 
-For more information on
-[Check Point Management API Reference](https://sc1.checkpoint.com/documents/latest/APIs/#introduction~v1.7%20) and 
+For more information see
+[Check Point Management API](https://sc1.checkpoint.com/documents/latest/APIs/#introduction~v1.7%20) and 
 [Logic App Overview](https://azure.microsoft.com/en-us/services/logic-apps/) 
 
-# How the Logic App Connector work? 
+# How does the Logic App Connector work? 
 
 <p align="left">  
 <img width="800" src="https://raw.githubusercontent.com/chkp-jguo/Check-Point-Logic-App-Connector/main/images/cp_LogicApp_01.png"> </a>
@@ -25,7 +25,7 @@ The Logic App workbook can get triggers from any of the hundreds of connectors c
 
 Change request items include IP addresses, URLs, groups, gateways, and policy packages. 
 
-The Check Point Logic App Connector contains most Check Point Mgmt API parameters to cater most common tasks you want to automate. 
+The Check Point Logic App Connector contains Check Point Mgmt API parameters to cater most common tasks you want to automate. 
 
 # How does everything tie together?
 
@@ -33,7 +33,7 @@ The Check Point Logic App Connector contains most Check Point Mgmt API parameter
 <img width="800" src="https://raw.githubusercontent.com/chkp-jguo/Check-Point-Logic-App-Connector/main/images/cp_LogicApp_detail_01.png"> </a>
 </p>
 
-This integration is using Azure API Management, Function App, and Logic Apps. These services are securely connected using API keys and IP ranges. See security guidance below
+The solution is using Azure API Management, Function App, and Logic Apps. These services are secured by allowing access from respective Azure IP ranges and secured by API keys. See security guidance below.
 
   * API Management allows you to consolidate all API from a single static IP, fine-grained control and provides detailed reporting of your APIs. 
   * The Function App help connect Logic App to both cloud and on-prem Check Point Management station
@@ -59,17 +59,17 @@ This integration is using Azure API Management, Function App, and Logic Apps. Th
 
 2. Workflow - Logic App instructions
 
-	  Defining the Check Point gateway and policy package
+	  Define the Check Point gateway and policy package
     <p align="left">  
     <img width="400" src="https://raw.githubusercontent.com/chkp-jguo/Check-Point-Logic-App-Connector/main/images/workflow1.png"> </a>
     </p>
 
-	  Defining the Check Point management station user/pw
+	  Define the Check Point management station user/pw
     <p align="left">  
     <img width="400" src="https://raw.githubusercontent.com/chkp-jguo/Check-Point-Logic-App-Connector/main/images/workflow2.png"> </a>
     </p>
 
-    Defining what action to take, in this case, create and add each host to predefined group
+    Define what action to take, in this case, create and add each host to predefined group
     <p align="left">  
     <img width="400" src="https://raw.githubusercontent.com/chkp-jguo/Check-Point-Logic-App-Connector/main/images/workflow3.png"> </a>
     </p>
@@ -223,7 +223,7 @@ This integration is using Azure API Management, Function App, and Logic Apps. Th
       ],
     ```
   
-2. Rotate access keys to API management and Function App every 90 days
+2. Rotate access keys to API management, Function App, and Check Point user password/access keys every 90 days
 
 # Deploy 
 
