@@ -38,6 +38,12 @@ The solution is using Azure API Management, Function App, and Logic Apps. These 
   * API Management allows you to consolidate all API from a single static IP, fine-grained control and provides detailed reporting of your APIs. 
   * The Function App help connect Logic App to both cloud and on-prem Check Point Management station
 
+
+# Deploy 
+
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchkp-jguo%2FCheck-Point-Logic-App-Connector%2Fmain%2FdeployCP.json)
+
+
 # Logic App playbook components
 
 1. Trigger point - It can be scheduled, use HTTP post, or trigger point from a connector
@@ -223,7 +229,3 @@ The solution is using Azure API Management, Function App, and Logic Apps. These 
     ```
   
 2. Rotate access keys to API management, Function App, and Check Point user password/access keys every 90 days
-
-# Deploy 
-
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchkp-jguo%2FCheck-Point-Logic-App-Connector%2Fmain%2FdeployCP.json)
