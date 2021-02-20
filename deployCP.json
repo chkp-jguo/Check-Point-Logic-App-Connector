@@ -102,7 +102,7 @@
             },
             "resources": [
                 {
-                    "type": "extensions",
+                    "type": "Extensions",
                     "apiVersion": "2015-02-01",
                     "name": "[variables('srcControlsName')]",
                     "dependsOn": [
@@ -150,7 +150,7 @@
             "name": "[concat(variables('funcAppName'), '/default/apimanagement')]",
             "dependsOn": [
                 "[resourceId('Microsoft.Web/sites', variables('funcAppName'))]",
-                "[resourceId('Microsoft.Web/sites/extensions', variables('funcAppName'), 'web')]"
+                "[resourceId('Microsoft.Web/sites/Extensions', variables('funcAppName'), 'web')]"
             ],
             "properties": {
                 "name": "api-management"
@@ -239,7 +239,7 @@
             "name": "[concat(variables('apiName'), '/', variables('funcAppName'))]",
             "dependsOn": [
                 "[resourceId('Microsoft.Web/sites/host/functionKeys', variables('funcAppName'), 'default', 'apimanagement')]",
-                "[resourceId('Microsoft.Web/sites/extensions', variables('funcAppName'), 'web')]",
+                "[resourceId('Microsoft.Web/sites/Extensions', variables('funcAppName'), 'web')]",
                 "[resourceId('Microsoft.ApiManagement/service', variables('apiName'))]",
                 "[resourceId('Microsoft.Web/sites', variables('funcAppName'))]"
             ],
@@ -264,7 +264,7 @@
             "dependsOn": [
                 "[resourceId('Microsoft.ApiManagement/service', variables('apiName'))]",
                 "[resourceId('Microsoft.Web/sites/host/functionKeys', variables('funcAppName'), 'default', 'apimanagement')]",
-                "[resourceId('Microsoft.Web/sites/extensions', variables('funcAppName'), 'web')]",
+                "[resourceId('Microsoft.Web/sites/Extensions', variables('funcAppName'), 'web')]",
                 "[resourceId('Microsoft.Web/sites', variables('funcAppName'))]"
             ],
             "properties": {
