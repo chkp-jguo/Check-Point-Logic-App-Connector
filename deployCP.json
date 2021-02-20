@@ -102,16 +102,14 @@
             },
             "resources": [
                 {
-                    "type": "sourcecontrols",
-                    "apiVersion": "2015-08-01",
+                    "type": "Extensions",
+                    "apiVersion": "2015-02-01",
                     "name": "[variables('srcControlsName')]",
                     "dependsOn": [
                         "[resourceId('Microsoft.Web/sites/', variables('funcAppName'))]"
                     ],
                     "properties": {
-                        "RepoUrl": "[variables('repoURL')]",
-                        "branch": "[parameters('GitHubBranch')]",
-                        "IsManualIntegration": true
+                        "packageUrl": "[variables('repoURL')]"
                     }
                 }
             ]
