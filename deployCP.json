@@ -102,7 +102,7 @@
             },
             "resources": [
                 {
-                    "type": "Extensions",
+                    "type": "extensions",
                     "apiVersion": "2015-02-01",
                     "name": "[variables('srcControlsName')]",
                     "dependsOn": [
