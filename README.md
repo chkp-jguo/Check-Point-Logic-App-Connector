@@ -4,7 +4,7 @@ The Check Point Logic App Connector will allow you to automate security operatio
 
 Logic App can easily integrate Check Point with all native Azure services and hundreds of connectors such as ServiceNow, Jira, PagerDuty, ZenDesk, and more. See the [full list of available connectors here.](https://docs.microsoft.com/en-us/connectors/connector-reference/)
 
-Common use cases include: 
+Common use cases include:: 
 
   1. Enable operation teams to automate common security functions such as creating objects, updating security policies, and schedule security policy updates to gateways. 
   2. Fully integrate with any orchestration platforms for both on-prem or public cloud providers
